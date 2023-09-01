@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.7px;
+}
+
+/* Apply flexbox to the parent div to align images vertically */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+    width: 50%;
+}
+
+/* Ensure images fill their containers while maintaining aspect ratio */
+.image-container img {
+    max-width: 50%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 7%;
+    padding-top: 10px;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #FF6969;
+    color: #FFF5E0;
+    font-size: 35px;
+}
+
+.movies-div{
+    background-color: #141E46;
+    width: 100%;
+    color: #FFF5E0;
+    padding: 70px;
+}
+
+h3{
+    font-size: 35px;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+.movies-div p{
+    padding: 20px;
+    border-radius: 7px;
+    width: 75%;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF5E0;
+    color: #BB2525;
+    padding: 50px;
+    cursor: help;
+}
+
+@media screen and (max-width: 1000px) {
+    .image-container img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    *{
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 1px;
+    }
+    header{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .movies-div p{
+        padding: 10px;
+        width: 60%;
+    }
+    .footer-div{
+        font-size: 12px;
+    }
+}
